@@ -7,92 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="/style/index.css">
+   
 </head>
 <body>
-    <!-- Navbar Starting............ -->
+    
     <!-- Nav Bar Start here -->
     <nav>
       <div class="wrapper">
-         
-          <div id="navTop">
-  
-         
-         <a href="">Store Locator</a>
-         <a href="">Track Order</a>
-         <a href="">Login</a> 
-         <a href="./cart.html">Cart</a> 
-          <a href="./cart.html" id="cartlogoidi"><img src="/jshopping-cart.png" id="cartlogoid" alt=""></a>
-                  <div  id="loginidi" ><img src="/usedr.png" id="loginid" alt=""></div>
-                  
-      </div>
       <div id="onlyfornavstyle">
           <div class="logo">
               <img  src="/Screenshot (39).png" onclick="redirecttohomepage()" alt="">
           </div>
           <div id="onlyfornavstyl">
           <ul class="section" id="nav_buttons">
-              <li class="sub-menu" id="men"><a href="#">Men</a>
-                  <ul class="drop-down" >
-                    
-                       <li><a href="/products.html"  data-subc="T-Shirt" data-gend="Men">T-Shirt</a></li>
-                      <li><a href=""  data-subc="Shirts" data-gend="Men" >Shirts</a></li>
-                      <li><a href="" data-subc="Jackets" data-gend="Men">Jackets</a></li>
-                      <li><a href="" data-subc="Hoodies" data-gend="Men">Hoodies</a></li>
-                  <li><a href="" data-subc="Jeans" data-gend="Men">Jeans</a></li>
-                  <li><a href="" data-subc="Shorts" data-gend="Men">sorts</a></li>
-                  <li><a href="" data-subc="Sweaters" data-gend="Men"> Sweaters</a></li>
-              
+            <div>
+            <input id="search" type="text" placeholder="Search Here">
+        </div>
+            <a href=""data-subc="T-Shirt" data-gend="Women" >Offers</a>
+            <a href=""data-subc="T-Shirt" data-gend="Women" >Help</a>
+            <li class="sub-menu" id="women"> <a href="">profile</a>
+                  <ul class="drop-down">  
+                      <li><a href=""data-subc="T-Shirt" data-gend="Women" >login</a></li>
+                      <li><a href=""data-subc="Jackets" data-gend="Women">Sign Up</a></li>
+                      <li><a href="" data-subc="Hoodies" data-gend="Women">Orders </a></li> 
+                      <li><a href="" data-subc="Jeans" data-gend="Women">Log Out</a></li>
+                      <li><a href="" data-subc="Shorts" data-gend="Women">Favourites</a></li>  
           </ul>
-              </li>
-              <li class="sub-menu" id="women"> <a href="">Women</a>
-                  <ul class="drop-down">
-                      
-                      <li><a href=""data-subc="T-Shirt" data-gend="Women" >T-Shirt</a></li>
-                      <li><a href=""data-subc="Jackets" data-gend="Women">Jackets</a></li>
-                      <li><a href="" data-subc="Hoodies" data-gend="Women">Hoodies </a></li> 
-                      <li><a href="" data-subc="Jeans" data-gend="Women">Jeans</a></li>
-                      <li><a href="" data-subc="Shorts" data-gend="Women">Shorts</a></li>
-                      <li><a href="" data-subc="Sweaters" data-gend="Women"> Sweaters</a></li>
-                     
-          </ul>
-              </li>
-              <li class="sub-menu"> <a href="">Jeans</a>
-                  <ul class="drop-down">
-                      
-                      <li><a href="" data-subc="Jeans" data-gend="">Skinny Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Slim Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Straight Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Airflex Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Bootcat Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Athletic fit Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Ripped Jeans</a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">High rise Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Cropped Jeans </a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Mom</a></li>
-                      <li><a href="" data-subc="Jeans" data-gend="">Ripped Jeans</a></li>
-          </ul>
-              </li>
-              <li class="sub-menu"> <a href="">sale</a>
-                
-              </li>
-              <li class="sub-menu"><a href="">Winter Wear</a>
-                  <ul  class="drop-down">
-                     
-                      <li><a href="" data-subc="Hoodies" data-gend="Winterwear"> Hoodies </a></li>
-                      <li><a href="" data-subc="Jackets" data-gend="Winterwear">Jackets </a></li>
-                      <li><a href="" data-subc="Sweaters" data-gend="Winterwear">Sweaters </a></li>
-                      
-          </ul>
-      </li>
-     
-          </ul>
-          <input id="search" type="text" placeholder="Search Here">
+              </li> 
+              <a href="./cart.html">Cart</a>
+            </ul>
+         
+          <div>
+           
+        </div>
           </div>
-          </div>
-  
-  
                   </div>
-                 
                   </nav>
   
                   <!-- Nav Bar End here -->
@@ -138,7 +87,36 @@
                   </div>
                   </div>
                   </div> 
-                  <div id="products"></div>
+                  <div id="container">
+                  <div id="top">
+                    <div id="count">
+
+                    </div>
+                    <div id="relevence">
+                    <h5>Relevance</h5>
+                  </div>
+                  <div id="time">
+                    <h5>Delivery Time</h5>
+                  </div>
+                  <div id="rating">
+                    <h5>Rating</h5>
+                  </div>
+                  <div id="l2h">
+                    <h5>Cost: Low To High</h5>
+                  </div>
+                  <div id="h2l">
+                    <h5>Cost: High To Low</h5>
+                  </div>
+                  <div id="filters">
+                    <h5>Filters</h5>
+                  </div>
+                  </div>
+                  <i class="fa-regular fa-heart-circle-plus"></i>
+                  <div id="products">
+                    <!-- products will be append here -->
+                   
+                  </div>
+                </div>
 </body>
 
 <script src="/script/index.js"></script>
