@@ -1,0 +1,265 @@
+          /* Nav Bar Styling  */
+          .logo>img{
+            margin-top: 5px;
+          border-radius: 15px;
+          width: 70px;
+          margin-right: 5px
+          }
+          button{
+          margin-bottom: 20px;
+          border-radius: 20px;
+          background-color: azure;
+          height: 50px;
+          width: 280px;
+          color: red;
+          margin-left:60%;
+          padding: 20px;
+          border: 0px;
+          }
+          #nav_buttons>a{
+         margin-left: 20px;
+          }
+          nav{
+         position: fixed;
+         top: 0;
+         width: 100%;
+         background: rgb(255,255,255);
+         background: linear-gradient(0deg, rgba(255,255,255,0.9444152661064426) 0%, rgba(255,255,255,1) 100%);
+         }
+         a{ text-decoration: none; color: black;}
+         
+         li{list-style: none;}
+         
+         #onlyfornavstyle{
+           margin-left: 0px;
+           width: 100%;
+         display: flex;
+         justify-content: space-between;
+         margin-right: 100px;
+         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+         }
+         #onlyfornavstyl{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         margin-left: 40%;
+         }
+         nav .wrappper{
+         max-width: 1300px;
+         position: relative;
+         display: flex;
+         }
+         nav .wrapper .section{
+         display: inline-flex;
+         margin-left: 130px;
+         }
+         nav .wrapper .section li a{
+         text-transform: uppercase;
+         font-size: 13px;
+         padding:10px 25px;
+         transition: all 0.5s;
+         } 
+         nav .wrapper .section li a:hover{
+         background-color:#000000 ;
+         color: white;
+         }
+         nav .wrapper .section li.sub-menu>a:after{
+         /* content: '\eb21'; */
+         font-family: 'boxicons' !important;
+         position: absolute;
+         color: #5D4037;
+         display: inline-block;
+         vertical-align: middle;
+         margin-left: 5px;
+         }
+         nav .wrapper .section li.sub-menu:hover>a:after{
+         /* content: '\eaed'; */
+         font-family: 'boxicons' !important;
+         position: absolute;
+         color: #5D4037;
+         display: inline-block;
+         vertical-align: middle;
+         margin-left: 0px;
+         }
+         nav .wrapper .section .drop-down{
+         width: 100px;
+         position: absolute;
+         top: 80px;
+         line-height: 50px;
+         /* border-top: 4px solid #ff652f; */
+         opacity: 0;
+         visibility: hidden;
+         }
+         nav .wrapper .section li:hover .drop-down{
+         opacity: 1;
+         width: 100%;
+         visibility: visible;
+         background-color: aliceblue;
+         transition: all 0.5s;
+         }
+         #search{
+         width: 200px;
+         text-align: center;
+         border-radius: 5px;
+         height: 30px;
+         margin-top: 0px;
+         }
+         
+         
+         /* login and sign up popup styling */
+         
+         .popup{
+         position:absolute;
+         top:-150%;
+         left:50%;
+         opacity: 0;
+          transform: translate(-50%,-50%) scale(1.25);
+          width:500px;
+          padding:20px 30px;
+          background: #fff;
+          box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+          transition:top 0ms ease-in-out 200ms ,
+          opacity 200ms ease-in-out 0ms,
+          transform 200ms ease-in-out 0ms;
+           
+          }
+          .popup.active{
+           top:50%;
+           opacity: 1;
+          transform: translate(-50%,-50%) scale(1);
+          transition:top 0ms ease-in-out 0ms ,
+          opacity 200ms ease-in-out 0ms,
+          transform 200ms ease-in-out 0ms
+          }
+          .popup .close-btn{
+          font-size: 20px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          height: 25px;
+          font-weight: bolder;
+          display: flex;
+          justify-content: center;
+          width: 25px;
+          align-items: center;
+          background: #888;
+          color: #eee;
+          text-align: center;
+          line-height: 15 px;
+          border-radius: 50%;
+          cursor: pointer;
+          
+          }
+          #signin{
+           text-align: center;
+           margin: auto;
+          
+          }
+          /* .popup .form h2{
+           text-align: center;
+           color: #222;
+           margin: 10px 0px 20px;
+           font-size: 25px;
+          } */
+          .popup .form .form-element{
+           margin: 15px 0px;
+          }
+          /* .popup .form .form-element label {
+           font-size: 17px;
+           color: #222;
+           text-align:left;
+           
+           
+          }
+          .popup .form .form-element label p{
+           margin-bottom: 10px;
+          } */
+          #remember-me{
+           margin-top: 5px;
+           text-align: right;
+          }
+          .popup .form .form-element input[type="text"],.popup .form .form-element input[type="password"]{
+           margin-top:0px;
+           width: 100%;
+           padding:10px ;
+           border: 1px solid #aaa;
+           /* border-radius: 5px; */
+          }
+          .popup .form .form-element input[type="checkbox"] {
+          margin-right:5px ;
+         margin: auto;
+          }
+          .popup .form .form-element button{
+           width:100%;
+           height:50px;
+           border: none;
+           outline: none;
+          font-size:15px ;
+          background:#222;
+          color:#f5f5f5;
+          cursor: pointer;
+          }
+          .popup .form .form-element a{
+           display: block;
+           text-align:left;
+           font-size: 15px;
+           color: #1a79ca;
+           text-decoration: none;
+           font-weight: 600px;
+          }
+          #welcome-text{
+          letter-spacing: 0.1em;
+          padding-bottom: 15px;
+          text-align: left;
+          font-weight: 400;
+          margin-bottom: 0%;
+          }
+          #shop-name-text{
+          text-align: left;
+          letter-spacing: 0.1em;
+         line-height: 0%;
+         margin-left: 0%;
+         font-family: Arial, Helvetica, sans-serif;
+          }
+          #detail-text{
+          margin-top: 50px;
+          text-align: left;
+          }
+          #createannewaccount{
+          text-align: left;
+          }
+         
+
+
+#product{
+    margin-top: 100px;
+    border-bottom: 2px dotted black;
+}
+#products>div>p{font-size: smaller;color: #9E9E9E;}
+#details{
+    display: flex;
+}
+#details>div:nth-child(1){
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: #424242;
+    margin-right: 50%;
+}
+#details>div:nth-child(2){
+    height: 100px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#top{
+    display: flex;
+    font-size: small;
+    font-style: italic;
+    color: #6D4C41 ;
+}
+#top>p{margin-right: 90%;}
+#top>div{}
+
+.starPrice{
+    width: 150px;
+    text-align: center;
+}
