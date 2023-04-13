@@ -4,114 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GARDEN EAT'S</title>
     
     <link rel="stylesheet" href="/style/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"  />
 </head>
 <body>
 
-      <!-- Nav Bar Start here -->
-      <nav>
-        <div class="wrapper">
-        <div id="onlyfornavstyle">
-            <div class="logo">
-                <img  src="/Screenshot (39).png" onclick="redirecttohomepage()" alt="">
-            </div>
-            <div id="onlyfornavstyl">
-            <ul class="section" id="nav_buttons">
-              <div>
-              <input id="search" type="text" placeholder="Search Here">
+        <!-- Nav Bar Start here -->
+    <!-- Nav Bar Start here -->
+    <nav>
+      <div class="wrapper">
+      <div id="onlyfornavstyle">
+          <div class="logo">
+              <img  src="/Screenshot (39).png" onclick="redirecttohomepage()" alt="">
           </div>
-              <a href=""data-subc="T-Shirt" data-gend="Women" >Offers</a>
-              <a href=""data-subc="T-Shirt" data-gend="Women" >Help</a>
-              <li class="sub-menu" id="women"> <a href="">profile</a>
-                    <ul class="drop-down">  
-                        <li><a href=""data-subc="T-Shirt" data-gend="Women" >login</a></li>
-                        <li><a href=""data-subc="Jackets" data-gend="Women">Sign Up</a></li>
-                        <li><a href="" data-subc="Hoodies" data-gend="Women">Orders </a></li> 
-                        <li><a href="" data-subc="Jeans" data-gend="Women">Log Out</a></li>
-                        <li><a href="" data-subc="Shorts" data-gend="Women">Favourites</a></li>  
-            </ul>
-                </li> 
-                <a href="./cart.html">Cart</a>
-              </ul>
-           
+          <div id="onlyfornavstyl">
+          <div class="section" id="nav_buttons">
             <div>
-             
-          </div>
+              <input id="search" type="text" placeholder="Search Here">
             </div>
-                    </div>
-                    </nav>
-    
-                    <!-- Nav Bar End here -->
-    
-                    <div class="popup">
-                        <h1 id="welcome-text">WELCOME TO    </h1>
-             
-            <h2 id="shop-name-text">TRENDING EAGLE</h2>
+        <button id="logout"></button>
+        
+           
+          </div>
+          </div>
+        
+       </div>
+       </div>
                
-            <h4 id="detail-text">Login / Register with us to get latest updates and manage your orders</h4>
-                    <div class="close-btn">&times;</div>
-                    <div class="form">
-                        <div class="form-element">
-                            <!-- <label for="username"><p>USER NAME</p></label> -->
-                            <input type="text" id="name" placeholder="Enter Name">
-                            </div>
-                    <div class="form-element">
-                    <!-- <label for="username"><p>USER NAME</p></label> -->
-                    <input type="text" id="username" placeholder="Enter Username">
-                    </div>
-                    <div class="form-element"> 
-                    <!-- <label for="password"><p>PASSWORD</p></label> -->
-                    <input type="password" id="password" placeholder="Enter Password">
-                    </div>
-                    <div class="form-element">
-                    <input type="checkbox" id="remember-me" >
-                    <label for="remember-me"  ><p id="remember-me">REMEMBER ME</p></label>
-                    </div>
-                    <div class="form-element">
-                    <button id="signin">SIGN IN</button>
-                    
-                    
-                    </div>
-                    <div class="form-element">
-                    <a href="#">Forgot Password?</a>
-                    
-                    </div>
-                    <hr>
-                    <div id="createannewaccount">
-                        <p>Don't have an account?
-                            No problem...</p>
-                         <a href="./signup.html">    <p>Create Account</p></a>
-                    </div>
-                    </div>
-                    </div> 
+       <div  id="loginidi" ><p id="user"></p> <img src="/image/login.jpg" id="loginid" alt=""></div>
+    </nav>
+  
+                 
+  
+
+
+       <!-- Login Popup start from Here -->
+
+ <div class="popup">
+          <h1 id="welcome-text">WELCOME TO    </h1>
+           
+          <h2 id="shop-name-text">GARDEN OF EAT'N</h2>
+             
+          <h4 id="detail-text">Login / Register with us to get latest updates and manage your orders</h4>
+                  <div class="close-btn">&times;</div>
+                  <div class="form">
+                      <div class="form-element">
+                          <!-- <label for="username"><p>USER NAME</p></label> -->
+                          <input type="text" id="name" placeholder="Enter Name">
+                          </div>
+                  <div class="form-element">
+                  <!-- <label for="username"><p>USER NAME</p></label> -->
+                  <input type="text" id="username" placeholder="Enter Username">
+                  </div>
+                  <div class="form-element"> 
+                  <!-- <label for="password"><p>PASSWORD</p></label> -->
+                  <input type="password" id="password" placeholder="Enter Password">
+                  </div>
+                  <div class="form-element">
+                  <input type="checkbox" id="remember-me" >
+                  <label for="remember-me"  ><p id="remember-me">REMEMBER ME</p></label>
+                  </div>
+                  <div class="form-element">
+                  <button id="signin">SIGN IN</button>
+                  
+                  
+                  </div>
+                  <div class="form-element">
+                  <a href="#">Forgot Password?</a>
+                  
+                  </div>
+                  <hr>
+                  <div id="createannewaccount">
+                      <p>Don't have an account?
+                          No problem...</p>
+                       <a href="./signup.html">    <p>Create Account</p></a>
+                  </div>
+                  </div>
+                  </div> 
                     
     <div id="product">
 
-        <div id="top">
-            <p>Home / KFC</p>
-            <i class="fa-light fa-heart"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-              <div id="details">
-                <div>
-                <h3>KFC</h3>
-                <p>Burger,<span> American,</span> Fast food</p>
-                <p>less than 20km</p>
-                </div>
-                <div class="starPrice">
-                <p class="icon-star _537e4">&star;</span><span> 4</p>
-                <p class="price" > 1k + ratings</p>
-                </div>
-            </div>
-            <div id=""></div>
+     
+
 
 
 
     </div>
+
+    <div id="menu">
+    
+    </div>
+    <div id="addtocartBtn">
+        
+    </div>
 </body>
-<!-- <script src="/script/product.js"></script> -->
-<script src="https://kit.fontawesome.com/51da508498.js" crossorigin="anonymous"></script>
+<script src="/script/product.js"></script>
+
+
+<script>
+    // let isLogin= JSON.parse(localStorage.getItem("loginstatus"));
+
+document.querySelector("#loginidi").addEventListener("click",function(){
+  console.log(isLogin)
+  if(isLogin.status){
+    Swal.fire(
+      'Login?',
+      'You are still loged In? Log Out First',
+      'question'
+    )
+    // window.location.href = "/product.html"
+  }
+  else{
+  document.querySelector(".popup").classList.add("active")
+  }
+      })
+  
+      document.querySelector(".popup .close-btn").addEventListener("click",function(){
+  document.querySelector(".popup").classList.remove("active");
+  
+      })
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

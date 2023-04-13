@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Add Product To Site...</title>
+    <!-- <link rel="stylesheet" href="./styles/scrolebar.css"> -->
+   
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+      }
+      nav {
+        width: 100%;
+        height: 70px;
+        background: rgb(32, 7, 5);
+        display: flex;
+        justify-content: space-between;
+      }
+      nav > div > a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        height: 100%;
+        padding: 0px 30px 0px 30px;
+        display: flex;
+        align-items: center;
+      }
+      #adminbtn {
+        border: none;
+        border-radius: 0px 10px 10px 0px;
+        background-color: brown;
+      }
+      nav > img {
+        border-radius: 10px 0px 0px 10px;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      form {
+        box-shadow: 10px 10px 132px -1px rgba(255, 145, 145, 1);
+        width: 400px;
+        border: 2px solid teal;
+        text-align: left;
+        margin: auto;
+        background-color: rgb(215 173 173 / 43%);
+        padding: 20px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      form>input{
+        width: 90%;
+        height: 40px;
+      }
+      form>select{
+        width: 90%;
+        height: 40px;
+      }
+      #name{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      #img{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #price {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #rating{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #cat{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #menu{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+     
+      #desc{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #ingr{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #serves{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+     
+      
+      button {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 10px;
+        color: white;
+        font-weight: bolder;
+        border-radius: 10px;
+        background: #37474F;
+        
+      }
+      .swal-text {
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .swal-button {
+        background-color: #0025ff;
+      }
+      @media screen and (min-width:0px) and (max-width:400px){
+        form{
+    width: 300px;
+  }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="adminbtn"><a href="./admin.html">Back to ADMIN Page</a></div>
+      <img
+        src="./Screenshot (39).png"
+        alt="logo"
+        onclick="locat()"
+      />
+    </nav>
+    <h2>Please Fill Menu Details ...</h2>
+    <form method="post" name="google-sheet">
+      <input
+        type="text"
+        name="Name"
+        placeholder="Name..."
+        id="name"
+      />
+      <input
+        type="text"
+        name="Image"
+        placeholder="Past Image URL..."
+        id="img"
+      />
+      <input
+        type="text"
+        name="description"
+        placeholder="description..."
+        id="desc"
+      /> 
+      <input
+      type="number"
+      name="price"
+      placeholder="Price..."
+      id="price"
+    />
+      <select name="ingredient" id="ingr">
+        <option value="veg">VEG</option>
+        <option value="nonveg">NON_VEG</option>
+      </select>
+      <select name="serves" id="serves">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <button type="submit" id="btn" name="submit">ADD Menu</button>
+      <button id="Restbtn" >ADD Restaurent</button>
+
+    </form>
+  </body>  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    const url ="https://test-h-8359.onrender.com/restaurants"
+    const form = document.forms["google-sheet"];
+    let opration=JSON.parse(localStorage.getItem("opration"));
+    console.log(opration.states);
+
+    if(opration.states == "Add"){
+      form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let restaurentData;
+      if ( form.name.value != "" && form.img.value != "" && form.desc.value != "" && form.price.value != "" && form.ingr.value != "" && form.serves.value != "")
+         {
+         fetch(url)
+         .then(res=> res.json())
+         .then((data)=>{
+          restaurentData=data;
+          console.log(restaurentData);
+         
+          let Dish={};
+
+          Dish.name= form.name.value;
+          Dish.image= form.img.value;
+          Dish.description= form.desc.value;
+          Dish.price=form.price.value;
+          Dish.ingrediant=form.ingr.value;
+          Dish.serves=form.serves.value;
+
+          console.log(Dish);
+          let newRestaurent =JSON.parse(localStorage.getItem("newRestaurent"));
+          
+          newRestaurent.menu.push(Dish)
+
+          localStorage.setItem("newRestaurent",JSON.stringify(newRestaurent));
+
+          
+          restaurentData.push(newRestaurent)
+
+          console.log(restaurentData)
+          
+          let addRestraurent =document.getElementById("Restbtn");
+
+          addRestraurent.addEventListener("click",()=>{
+
+            
+            fetch(url, {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+             },
+            body: JSON.stringify(newRestaurent),
+               })
+            .then(response => response.json())
+            .then((data) => {
+            console.log(data)
+             Swal.fire(
+              'Good job!',
+              'New Restaurent Added!',
+              'success'
+              )
+              })
+             .catch(error => console.error(error));
+
+          })
+         })
+
+        }
+      else {
+        Swal.fire({
+                  icon: 'error',
+                  title: 'Oops...',
+                  text: 'Provied All fields!',
+                  footer: '<a href="">Why do I have this issue?</a>'
+               })
+
+      }
+    });
+  }
+  else{
+    let newRestaurent =JSON.parse(localStorage.getItem("newRestaurent"));
+    let menuNo=JSON.parse(localStorage.getItem("menu"));
+    console.log(menuNo.listNo)
+         let idToUpdate= newRestaurent.id;
+         fetch(`${url}/${idToUpdate}`)
+         .then(res=> res.json())
+         .then((data)=>{
+          newRestaurent=data;
+          console.log(newRestaurent.menu.length);
+          
+          if(menuNo.listNo <newRestaurent.menu.length){
+          console.log(newRestaurent)
+          
+          document.getElementById("name").value=data.menu[menuNo.listNo].name;
+          document.getElementById("img").value=data.menu[menuNo.listNo].image;
+          document.getElementById("desc").value=data.menu[menuNo.listNo].description;
+          document.getElementById("price").value=data.menu[menuNo.listNo].price;
+          document.getElementById("ingr").value=data.menu[menuNo.listNo].ingrediant;
+          document.getElementById("serves").value=data.menu[menuNo.listNo].serves;
+
+          let updateDetails=document.getElementById("btn");
+          
+              updateDetails.addEventListener("click",(e)=>{
+                   e.preventDefault();
+                   console.log("kasjfk");
+                   console.log(data.menu);
+                   let newMenu={};
+                   
+                   newMenu.name= form.name.value;
+                   newMenu.price= form.price.value;
+                   
+                   newMenu.description=form.desc.value;
+                   newMenu.image=form.img.value;
+                   newMenu.ingrediant=form.ingr.value;
+                   newMenu.serves=form.ingr.value;
+                   console.log(newMenu);
+                   newRestaurent.menu.push(newMenu);
+                   menuNo.listNo=menuNo.listNo+1;
+                   console.log(menuNo);
+                   localStorage.setItem("newRestaurent",JSON.stringify(newRestaurent));
+                   localStorage.setItem("menu",JSON.stringify(menuNo));
+                   
+
+                  window.location.href = "addMenu.html";
+            })
+      
+          }
+          else{
+            const restaurantId = newRestaurent.id ; // Replace with the actual ID of the restaurant you want to update
+            const apiUrl = `https://test-h-8359.onrender.com/restaurants/`;
+
+const dataToUpdate = newRestaurent;
+console.log(dataToUpdate)
+
+fetch(`${apiUrl}${restaurantId}`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(dataToUpdate), 
+})
+  .then(response => response.json())
+  .then(updatedData => {
+    console.log('Updated data:', updatedData);
+    // window.location.href = "./admin.html";
+  })
+  .catch(error => {
+    console.error('Error updating data:', error);
+  });
+          }
+
+         })
+
+  }
+    function locat() {
+      
+    }
+  </script>
+</html>

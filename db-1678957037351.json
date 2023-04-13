@@ -1,0 +1,358 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Himanshu",
+      "skill": "API"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "restaurants": [
+    {
+      "title": "Pind Punjab",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/inuz5b1g03lxlrnck5kl",
+      "Category": [
+        "North Indian",
+        "Indian",
+        "Chinese",
+        "Biryani",
+        "Thalis",
+        "Mughlai",
+        "Beverages"
+      ],
+      "rating": 4,
+      "budget": 450,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "Burger King",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/go0eudovff0wk8wxwmi4",
+      "Category": [
+        "Burger",
+        "American"
+      ],
+      "rating": 4,
+      "budget": 350,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "Aroma's Hydrabad House",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cmiib4dln20zbr3xmpqk",
+      "Category": [
+        "North Indian",
+        "Chinese",
+        "Biryani",
+        "Mughlai"
+      ],
+      "rating": 4,
+      "budget": 500,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "Mother's Kitchen",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gexfao3iitac6h5wakb4",
+      "Category": [
+        "North Indian",
+        "Chinese"
+      ],
+      "rating": 3.9,
+      "budget": 300,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "Oye Kiddan",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/poymismten2l3pbit1ui",
+      "Category": [
+        "North Indian",
+        "Punjabi",
+        "Thalis"
+      ],
+      "rating": 4,
+      "budget": 250,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "KFC",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bdcd233971b7c81bf77e1fa4471280eb",
+      "Category": [
+        "Burger",
+        "American",
+        "Biryani",
+        "Snacks",
+        "Fast Food"
+      ],
+      "rating": 3.9,
+      "budget": 400,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "La Pino'z Pizza",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/inuz5b1g03lxlrnck5kl",
+      "Category": [
+        "Desserts",
+        "Indian",
+        "Chinese",
+        "Biryani",
+        "Thalis",
+        "Mughlai",
+        "Beverages"
+      ],
+      "rating": 4,
+      "budget": 450,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "Indori Sarafa",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kvrg3iflik1f2x7dmf3n",
+      "Category": [
+        "Street Food",
+        "Chaat",
+        "North Indian"
+      ],
+      "rating": 4.2,
+      "budget": 200,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    },
+    {
+      "title": "Amul Restaurant",
+      "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dwa7qtycvyioxnswru3l",
+      "Category": [
+        "North Indian"
+      ],
+      "rating": 4,
+      "budget": 250,
+      "menu": [
+        {
+          "name": "2aloo Paratha + 1sweet Lassi",
+          "price": 175,
+          "serves": 1,
+          "description": "Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+        },
+        {
+          "name": "Palak Paneer",
+          "price": 135,
+          "serves": 1,
+          "description": " A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+        },
+        {
+          "name": "Plain Paratha",
+          "price": 35,
+          "serves": 1,
+          "description": "Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+          "ingrediant": "veg",
+          "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+        }
+      ]
+    }
+  ]
+}
