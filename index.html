@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>GARDEN EAT'S</title>
     <link rel="stylesheet" href="/style/index.css">
-   
+    
 </head>
 <body>
     
@@ -19,37 +19,32 @@
               <img  src="/Screenshot (39).png" onclick="redirecttohomepage()" alt="">
           </div>
           <div id="onlyfornavstyl">
-          <ul class="section" id="nav_buttons">
+          <div class="section" id="nav_buttons">
             <div>
-            <input id="search" type="text" placeholder="Search Here">
-        </div>
-            <a href=""data-subc="T-Shirt" data-gend="Women" >Offers</a>
-            <a href=""data-subc="T-Shirt" data-gend="Women" >Help</a>
-            <li class="sub-menu" id="women"> <a href="">profile</a>
-                  <ul class="drop-down">  
-                      <li><a href=""data-subc="T-Shirt" data-gend="Women" >login</a></li>
-                      <li><a href=""data-subc="Jackets" data-gend="Women">Sign Up</a></li>
-                      <li><a href="" data-subc="Hoodies" data-gend="Women">Orders </a></li> 
-                      <li><a href="" data-subc="Jeans" data-gend="Women">Log Out</a></li>
-                      <li><a href="" data-subc="Shorts" data-gend="Women">Favourites</a></li>  
-          </ul>
-              </li> 
-              <a href="./cart.html">Cart</a>
-            </ul>
-         
-          <div>
-           
-        </div>
+              <input id="search" type="text" placeholder="Search Here">
+            </div>
+            <div  id="loginidi" ><p id="user"></p> <img src="/image/login.jpg" id="loginid" alt=""></div>
+            <button id="logout"></button>
+        
+          
           </div>
-                  </div>
-                  </nav>
+          </div>
+        
+       </div>
+               
+      
+    </nav>
   
-                  <!-- Nav Bar End here -->
+                 
   
-                  <div class="popup">
-                      <h1 id="welcome-text">WELCOME TO    </h1>
+
+
+       <!-- Login Popup start from Here -->
+
+ <div class="popup">
+          <h1 id="welcome-text">WELCOME TO    </h1>
            
-          <h2 id="shop-name-text">TRENDING EAGLE</h2>
+          <h2 id="shop-name-text">GARDEN OF EAT'N</h2>
              
           <h4 id="detail-text">Login / Register with us to get latest updates and manage your orders</h4>
                   <div class="close-btn">&times;</div>
@@ -87,14 +82,17 @@
                   </div>
                   </div>
                   </div> 
+
+                  <!-- Login Popup End Here -->
+
+      <!-- Nav Bar End here -->
+
                   <div id="container">
                   <div id="top">
                     <div id="count">
 
                     </div>
-                    <div id="relevence">
-                    <h5>Relevance</h5>
-                  </div>
+                   
                   <div id="time">
                     <h5>Delivery Time</h5>
                   </div>
@@ -107,9 +105,7 @@
                   <div id="h2l">
                     <h5>Cost: High To Low</h5>
                   </div>
-                  <div id="filters">
-                    <h5>Filters</h5>
-                  </div>
+                  
                   </div>
                   <i class="fa-regular fa-heart-circle-plus"></i>
                   <div id="products">
@@ -120,5 +116,6 @@
 </body>
 
 <script src="/script/index.js"></script>
-
+<script src="/script/signin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

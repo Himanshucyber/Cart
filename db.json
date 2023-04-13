@@ -4,7 +4,7 @@
 
   ],
   "users": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    { "name":"Himanshu" , "username": "Himanshu97", "password": "Himanshu","admin":"true" }
   ],
   "restaurants":[
     {
@@ -12,64 +12,130 @@
       "imgage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/inuz5b1g03lxlrnck5kl",
       "Category": ["North Indian","Indian","Chinese","Biryani","Thalis","Mughlai","Beverages"],
       "rating": 4.0,
-      "price": 450
+      "budget": 450,
+      "menuId": [1,2,3,4,5]
     },
     {
       "title": "Burger King",
       "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/go0eudovff0wk8wxwmi4",
       "Category":["Burger","American"],
       "rating": 4.0,
-      "price":350
+      "budget":350,
+      "menuId": [1,2,3]
+      
+      
     },
     {
       "title": "Aroma's Hydrabad House",
       "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cmiib4dln20zbr3xmpqk",
       "Category":["North Indian","Chinese","Biryani","Mughlai"],
       "rating": 4.0,
-      "price":500
+      "budget":500,
+      "menuId": [1,2,3]
+      
     },
     { 
       "title": "Mother's Kitchen",
       "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gexfao3iitac6h5wakb4",
       "Category":["North Indian","Chinese"],
       "rating": 3.9,
-      "price":300
+      "budget":300,
+      "menuId": [1,2,3]
+      
     }, 
     { 
       "title": "Oye Kiddan",
       "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/poymismten2l3pbit1ui",
       "Category":["North Indian","Punjabi","Thalis"],
       "rating": 4.0,
-      "price":250
+      "budget":250,
+      "menuId": [1,2,3]
+      
     }, 
     {
       "title": "KFC",
       "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bdcd233971b7c81bf77e1fa4471280eb",
       "Category":["Burger","American","Biryani","Snacks","Fast Food"],
       "rating": 3.9,
-      "price":400
+      "budget":400,
+      "menuId": [1,2,3]
+      
      },
     {  
       "title": "La Pino'z Pizza",
       "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/inuz5b1g03lxlrnck5kl",
       "Category":["Desserts","Indian","Chinese","Biryani","Thalis","Mughlai","Beverages"],
       "rating": 4.0,
-      "price":450
+      "budget":450,
+      "menuId": [1,2,3]
+      
     },
     {
         "title": "Indori Sarafa",
         "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kvrg3iflik1f2x7dmf3n",
         "Category":["Street Food","Chaat","North Indian"],
         "rating": 4.2,
-        "price":200
+        "budget":200,
+        "menuId": [1,2,3]
+       
        },
        {
         "title": "Amul Restaurant",
         "imgage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dwa7qtycvyioxnswru3l",
         "Category":["North Indian"],
         "rating": 4.0,
-        "price":250
+        "budget":250,
+        "menuId": [1,2,3]
+       
        }
-  ]
+  ],
+
+  "menu":[
+    { "id":1,
+     "name": "2aloo Paratha + 1sweet Lassi",
+     "price": 175,
+     "serves": 1,
+     "description":"Delicious soft parathas made with fine grain whole wheat floor stuffed with farm fresh potatoes, tinge of green chilli and indian spices served with chutney and pickle",
+     "ingrediant": "veg",
+     "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f8mbx3tvem56zdwpprzt"
+    },
+    {
+      "id":2,
+      "name": "Palak Paneer",
+      "price": 135,
+      "serves": 1,
+      "description":" A hearty dish with soft paneer cubes cooked in palak puree with flavourfull masala.",
+      "ingrediant": "veg" ,
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gkjbxvcfdx3iwwe7145s"
+    },
+    {
+      "id":3,
+      "name": "Plain Paratha",
+      "price": 35,
+      "serves": 1,
+      "description":"Delicious soft paratha made with fine grain whole wheat flour. Our collection of parathas are truly desi and pure. Each paratha is an expression of love.",
+      "ingrediant": "veg" ,
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sre6yvuzy7nzuv2qddgp"
+    },
+    {
+      "id":4,
+      "name": "Balle Balle Paratha",
+      "price": 100,
+      "serves": 1,
+      "description":" Stuffed flatbreads with vegetables, spices, herbs and special fillings",
+      "ingrediant": "veg" ,
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c367dos4hu2mfcmkucix"
+    },
+    {
+      "id":5,
+      "name": "Balle Balle Paratha",
+      "price": 100,
+      "serves": 1,
+      "description":" Stuffed flatbreads with vegetables, spices, herbs and special fillings",
+      "ingrediant": "veg" ,
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c367dos4hu2mfcmkucix"
+    }
+
+]
   
 }
